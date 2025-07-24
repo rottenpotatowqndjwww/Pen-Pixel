@@ -1,0 +1,8 @@
+npm i init - get packetJson (project settings)
+npm i express - get express framework
+npm i mongoose - get support for mongodb
+npm i cors - connect any frontend with backend
+npm i dotenv - get support for enviroment variables 
+npm i jsonwebtoken - used to genrate token used for user authentication
+npm i multer - to support files 
+npm i nodemon - used for better server run
