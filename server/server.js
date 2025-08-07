@@ -16,9 +16,10 @@ await mongodb();
 
 //* middlewares
 app.use(cors({
-  origin: 'http://localhost:5173', 
+  origin: ['http://localhost:5173', 'https://pen-pixel-client.vercel.app'],
   credentials: true
 }));
+
 app.use(express.json())
 app.use(cookieParser())
 
