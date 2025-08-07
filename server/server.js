@@ -15,10 +15,18 @@ const app = express();
 await mongodb();
 
 //* middlewares
+import cors from 'cors';
+
+const allowedOrigins = [
+  'http://localhost:5173',
+  'https://pen-pixel-client.vercel.app'
+];
+
 app.use(cors({
-  origin: ['http://localhost:5173', 'https://pen-pixel-client.vercel.app'],
+  origin: allowedOrigins,
   credentials: true
 }));
+
 
 app.use(express.json())
 app.use(cookieParser())
